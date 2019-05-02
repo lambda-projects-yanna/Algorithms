@@ -9,11 +9,10 @@ def recipe_batches(recipe, ingredients):
             batches.append(0)
         else:
             ratio = int(ingredients[key] / recipe[key])
-            batches.append(round(ratio))
+            batches.append(ratio)
     return min(batches)
     
-    
-
+  
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 
   # your implementation with different inputs
